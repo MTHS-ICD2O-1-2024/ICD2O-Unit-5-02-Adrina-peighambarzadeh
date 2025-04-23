@@ -5,22 +5,29 @@
 // Created on: Apr 2025
 // This file contains the JS functions for index.html
 const randomNumber = Math.floor(Math.random() * 6) + 1
-/*
-* This function calculates the area of a triangle.
+/**
+* This function generates random positive or negative number
 */
-function check() {
-  // input
-  const positiveNum =  document.getElementById("option-positive").checked
-  // process
-  if (positiveNum == true) {
-    // output
-    const positiveNumber = Math.floor(Math.random() * 6) + 1
-  document.getElementById("result").innerHTML =
-    "The random umber is:"
+// eslint-disable-next-line no-unused-vars
+
+function generateNumber () {
+
+ // input
+const optionPositive = document.getElementById('option-positive').checked
+
+ // process
+if (optionPositive === true) {
+
+   // output
+document.getElementById('answer').innerHTML =
+'Your random number is: ' + randomNumber
 } else {
-    //output
-    const negativeNumber = (Math.floor(Math.random() * 6) + 1) * -1
-    document.getElementById("result"). innerHTML =
-    "The random umber is:"
-  }
+
+   // process
+   const randomNegativeNumber = randomNumber * -1
+   // output
+document.getElementById('answer').innerHTML =
+'Your random number is: ' + randomNegativeNumber
+}
+
 }
