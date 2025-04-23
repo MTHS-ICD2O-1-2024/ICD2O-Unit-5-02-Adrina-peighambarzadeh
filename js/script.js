@@ -10,18 +10,17 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 */
 function check() {
   // input
-  const userNumber =  parseInt(document.getElementById("user-number").value)
-
+  const positiveNum =  document.getElementById("option-positive").checked
   // process
-  if (userNumber == randomNumber) {
+  if (positiveNum == true) {
     // output
+    const positiveNumber = Math.floor(Math.random() * 6) + 1
   document.getElementById("result").innerHTML =
-    "You have gussed the correct number!"
-}
-
-  if (userNumber != randomNumber) {
+    "The random umber is:"
+} else {
     //output
+    const negativeNumber = (Math.floor(Math.random() * 6) + 1) * -1
     document.getElementById("result"). innerHTML =
-    "You have gussed the wrong number!"
+    "The random umber is:"
   }
 }
