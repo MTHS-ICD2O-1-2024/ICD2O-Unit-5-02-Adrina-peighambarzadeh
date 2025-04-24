@@ -19,14 +19,14 @@ function generateNumber() {
    if (optionPositive === true) {
 
       // output
-      document.getElementById('check').innerHTML =
+      document.getElementById('result').innerHTML =
          'Your random number is: ' + randomNumber
    } else {
 
       // process
       const randomNegativeNumber = randomNumber * -1
       // output
-      document.getElementById('check').innerHTML =
+      document.getElementById('result').innerHTML =
          'Your random number is: ' + randomNegativeNumber
    }
 
