@@ -11,24 +11,17 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 // eslint-disable-next-line no-unused-vars
 
 function generateNumber() {
-
    // input
    const optionPositive = document.getElementById('option-positive').checked
 
-   // process
+   // generate a new random number every time
+   const randomNumber = Math.floor(Math.random() * 6) + 1
+
+   // output
    if (optionPositive === true) {
-
-   // output
-document.getElementById('result').innerHTML =
-'Your random number is: ' + randomNumber
-} else {
-
-   // process
-   const randomNegativeNumber = randomNumber * -1
-   // output
-document.getElementById('result').innerHTML =
-'Your random number is: ' + randomNegativeNumber
-}
-
-
+      document.getElementById('result').innerHTML = 'Your random number is: ' + randomNumber
+   } else {
+      const randomNegativeNumber = randomNumber * -1
+      document.getElementById('result').innerHTML = 'Your random number is: ' + randomNegativeNumber
+   }
 }
