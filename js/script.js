@@ -19,7 +19,7 @@ function generateNumber() {
    if (optionPositive === true) {
 
       // output
-      document.getElementById('answer').innerHTML =
+      document.getElementById('check').innerHTML =
          'Your random number is: ' + randomNumber
    } else {
 
