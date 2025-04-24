@@ -26,7 +26,7 @@ document.getElementById('answer').innerHTML =
    // process
    const randomNegativeNumber = randomNumber * -1
    // output
-document.getElementById('answer').innerHTML =
+   document.getElementById('check').innerHTML =
 'Your random number is: ' + randomNegativeNumber
 }
 
