@@ -18,16 +18,17 @@ function generateNumber() {
    // process
    if (optionPositive === true) {
 
-      // output
-      document.getElementById('result').innerHTML =
-         'Your random number is: ' + randomNumber
-   } else {
+   // output
+document.getElementById('result').innerHTML =
+'Your random number is: ' + randomNumber
+} else {
 
-      // process
-      const randomNegativeNumber = randomNumber * -1
-      // output
-      document.getElementById('result').innerHTML =
-         'Your random number is: ' + randomNegativeNumber
-   }
+   // process
+   const randomNegativeNumber = randomNumber * -1
+   // output
+document.getElementById('result').innerHTML =
+'Your random number is: ' + randomNegativeNumber
+}
+
 
 }
