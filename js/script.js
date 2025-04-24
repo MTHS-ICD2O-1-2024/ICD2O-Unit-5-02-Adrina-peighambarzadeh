@@ -19,14 +19,14 @@ const optionPositive = document.getElementById('option-positive').checked
 if (optionPositive === true) {
 
    // output
-document.getElementById('answer').innerHTML =
+document.getElementById('result').innerHTML =
 'Your random number is: ' + randomNumber
 } else {
 
    // process
    const randomNegativeNumber = randomNumber * -1
    // output
-document.getElementById('answer').innerHTML =
+document.getElementById('result').innerHTML =
 'Your random number is: ' + randomNegativeNumber
 }
 
